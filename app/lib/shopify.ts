@@ -1,9 +1,5 @@
 const endpoint = `https://${process.env.SHOPIFY_STORE_DOMAIN}/api/2025-01/graphql.json`;
-console.log("Domain:", process.env.SHOPIFY_STORE_DOMAIN);
-console.log(
-  "Token:",
-  process.env.SHOPIFY_STOREFRONT_TOKEN?.substring(0, 10)
-);
+
 export async function getProducts() {
   const query = `
     {
